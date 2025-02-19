@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.parentDiv{
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+.childDiv{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 3px;
+}
+.childContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+input:focus{
+  border-color: inherit;
+}
+/* .phone-input[type="tel"]:valid {
+  border-color: green;
+}
+
+.phone-input[type="tel"]:invalid {
+  border-color: red;
+} */
+
+.phone-input{
+  border-color:green ;
+}
