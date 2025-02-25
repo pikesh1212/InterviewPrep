@@ -6,6 +6,7 @@ import Navbar from "./components/NavBar";
 import TodoApp from "./components/TodoApp";
 import Timer from "./components/TimerApp";
 import LazyContainer from "./components/LazyContainer";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/services/todoapp" element={<TodoApp />} />
           <Route path="/services/timer" element={<Timer />} />
           <Route path="/lazyload" element={<LazyContainer />} />
+          <Route path="/counter" element={<Counter />} />
         </Routes>
       </BrowserRouter>
     </>

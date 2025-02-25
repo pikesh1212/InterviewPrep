@@ -1,27 +1,24 @@
+import { useNavigate } from "react-router";
 import Counter from "./Counter";
 import Optimization from "./Optimization";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleCounterClick = () => {
+    navigate("/counter");
+  };
   return (
-    <div className="home">
-      <h1 class="text-3xl font-bold underline">Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-        voluptatum.
-        var,let const
-        Hoisting
-        Prototype Inheritence
-        closures
-        Event Loop
-      </p>
-      <p>Phone number: </p>
-      <input type="tel" pattern="\d{10}" className="phone-input" placeholder="Enter phone number" />
-      <hr />
-      <Counter/>
-      <hr />
-      <Optimization/>
-
-    </div>
+      <div className="home">
+        <h1 className="text-3xl font-bold underline">Home Page</h1>
+        <hr />
+        <ul>
+          <li onClick={handleCounterClick} style={{ cursor: "pointer" }}>
+            1. Counter using redux
+          </li>
+        </ul>
+        <hr />
+        <Optimization />
+      </div>
   );
 };
 export default Home;
