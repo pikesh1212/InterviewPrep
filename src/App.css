@@ -19,14 +19,17 @@
 input:focus{
   border-color: inherit;
 }
-/* .phone-input[type="tel"]:valid {
-  border-color: green;
+
+.outer {
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
 }
-
-.phone-input[type="tel"]:invalid {
-  border-color: red;
-} */
-
-.phone-input{
-  border-color:green ;
+.inner {
+  background-color: green;
+  height: 20px;
+  color: white;
+  text-align: right;
+  transition: 0.5s ease-in-out;
 }
